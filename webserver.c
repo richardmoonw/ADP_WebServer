@@ -45,12 +45,10 @@ int main(int argc, char *argv[])
 
 	// socket() simply creates and endpoint for communication and returns a file 
 	// descriptor that refers to that endpoint.
-	// -> The domain argument (first) specifies a communication domain. AD_INET = IPv4 
+	// -> The domain argument (first) specifies a communication domain. AF_INET = IPv4 
 	//    Internet Protocols
 	// -> The type argument (second) specifies the communication semantics. 
-	//    SOCK_STREAM = The connection is established and the two parties have a 
-	//    conversation until the connection is terminated by one of the parties
-	//    or by a network error
+	//    SOCK_STREAM = TCP socket.
 	// -> The protocol argument (third) specifies a particular protocol to be used
 	//    with the socket. Normally only a single protocol exists to support a 
 	//    particular socket type within a given protocol family, in which case
