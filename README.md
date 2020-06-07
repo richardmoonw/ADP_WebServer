@@ -1,6 +1,6 @@
 # WebServer
 
-This repository contains a web server done in language C. The web server can only attend one request **(TC2025.html)** because it was created only with demonstrative purposes.
+This repository contains a web server done in language C.
 
 ## Requirements
 - Unix-like operating system.
@@ -13,3 +13,6 @@ To run the server you just need to clone this repository, go into the folder tha
 gcc -o  webserver webserver.c
 ./webserver
 ```
+
+## Important considerations
+This web server can only attend requests for a resource called TC2025.html (it was created only with demonstrative purposes), if any other request is sent to it, you will get a 404 error page.
